@@ -5,9 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  width: 100%;
-}
 
 .navbar {
   display: flex;
@@ -32,6 +29,14 @@
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(to right, #f8bbd0, #fce4ec);
+}
+
+.hero-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
 .hero h2 {

@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Great Vibes', cursive;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,21 +28,11 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 5em;
+  line-height: 3;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
+
 button:hover {
   border-color: #646cff;
 }
@@ -59,7 +49,22 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  
+}
+
+
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 200, 200, 0.9);
+  cursor: pointer;
+  font-family: 'Parisienne', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  color: white;
 }

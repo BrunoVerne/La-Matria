@@ -1,20 +1,41 @@
 // PortadaSection.jsx
 // Sección principal con foto de la estética y frase representativa.
-// Bootstrap útil: jumbotron, ratio, object-fit, text-center, py-*, bg-*, text-white
+
 
 import React from 'react';
 import lamatria from '../images/lamatria.png';
 
 function PortadaSection() {
   return (
-    <div className="hero-full d-flex align-items-center" style={{ border: '0.3rem solid rgba(57, 0, 0,0.9)', backgroundColor: 'rgba(100, 0, 32, 0.3)'}}>
-      <div className="col-10 d-flex flex-column align-items-center justify-content-center">
-        <h1  className="display-1 fw-bold" style={{ fontFamily: 'Dancing Script, cursive'  }}>La Matria</h1>
-        <p className="lead" style={{ fontFamily: 'Dancing Script, cursive'  }}>Centro de estética para cuerpos no hegemónicos</p>
+    <div className="hero-full text-center position-relative" style={{ border: '0.3rem solid rgba(0, 0, 0, 0.9)', background: 'rgba(0, 0, 0, 0.9)' }}>
+
+      <div className="col-2">
+        {/* espacio vacío para equilibrar */}
       </div>
+
+
+      <div className="col-8 d-flex flex-column align-items-center justify-content-center">
+        <h1  className="display-1 fw-bold" style={{ fontFamily: 'Raleway , sans-serif',
+                                                    color: 'rgb(255, 255, 255)',
+                                                    textShadow: '0 0 9px rgba(255, 255, 255, 0.6)'}}
+          >La Matria
+        </h1>
+
+
+        <p className="lead" style={{ fontFamily: 'Raleway , sans-serif',
+                                      fontSize: '2.7rem',
+                                      color: 'rgba(167, 160, 163, 0.9)',
+                                      letterSpacing: '0.1em',
+                                      WebkitTextStroke: '1px rgb(17, 2, 2)',
+                                      textShadow: '0 0 4px rgba(172, 172, 172, 0.8)' }}
+                                      >Centro de estética para cuerpos no hegemónicos</p>
+      </div>
+
       <div className="col-2 d-flex justify-content-end">
-        <img src={lamatria} alt="La Matria" className="img-fluid" style={{ maxHeight: '20vh' }} />
+        <img src={lamatria} alt="La Matria" className="img-fluid" style={{ maxHeight: '20vh', filter: 'drop-shadow(0 0 2px rgba(255,255,255,0.8))' }} />
       </div>
+
+
     </div>
   );
 }

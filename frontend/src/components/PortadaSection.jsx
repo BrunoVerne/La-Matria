@@ -3,7 +3,7 @@
 
 
 import React from 'react';
-import lamatria from '../images/lamatria.png';
+import lamatria from '../recursos/lamatria.png';
 
 function PortadaSection() {
   return (
@@ -17,7 +17,8 @@ function PortadaSection() {
       <div className="col-8 d-flex flex-column align-items-center justify-content-center">
         <h1  className="display-1 fw-bold" style={{ fontFamily: 'Raleway , sans-serif',
                                                     color: 'rgb(255, 255, 255)',
-                                                    textShadow: '0 0 9px rgba(255, 255, 255, 0.6)'}}
+                                                    textShadow: '0 0 12px rgba(219, 132, 0, 0.9)',
+                                                  fontSize: '7rem'}}
           >La Matria
         </h1>
 
@@ -27,7 +28,7 @@ function PortadaSection() {
                                       color: 'rgba(167, 160, 163, 0.9)',
                                       letterSpacing: '0.1em',
                                       WebkitTextStroke: '1px rgb(17, 2, 2)',
-                                      textShadow: '0 0 4px rgba(172, 172, 172, 0.8)' }}
+                                      textShadow: '0 0 4px rgba(255, 60, 0, 0.8)' }}
                                       >Centro de estética para cuerpos no hegemónicos</p>
       </div>
 

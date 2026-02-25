@@ -8,13 +8,11 @@ import QuienesSomos from "./components/QuienesSomos";
 
 function App() {
   return (
-  <>
-    
-    <PortadaSection />
-    <MenuNav />
-    <QuienesSomos />
-
-  </>
+    <>
+      <PortadaSection />
+      <MenuNav />
+      <QuienesSomos />
+    </>
   )
 }
 

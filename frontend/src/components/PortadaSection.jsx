@@ -7,7 +7,7 @@ import lamatria from '../recursos/lamatria.png';
 
 function PortadaSection() {
   return (
-    <div className="hero-full text-center position-relative" style={{ border: '0.3rem solid rgba(0, 0, 0, 0.9)', background: 'rgba(0, 0, 0, 0.9)' }}>
+    <div className="hero-full text-center position-relative" style={{ border: '0.3rem solid rgba(32, 17, 39, 0.9)', background: 'rgb(40, 23, 41)' }}>
 
       <div className="col-2">
         {/* espacio vacío para equilibrar */}
@@ -16,8 +16,7 @@ function PortadaSection() {
 
       <div className="col-8 d-flex flex-column align-items-center justify-content-center">
         <h1  className="display-1 fw-bold" style={{ fontFamily: 'Raleway , sans-serif',
-                                                    color: 'rgb(255, 255, 255)',
-                                                    textShadow: '0 0 12px rgba(219, 132, 0, 0.9)',
+                                                    color: 'rgba(206, 114, 62, 0.9)',
                                                   fontSize: '7rem'}}
           >La Matria
         </h1>
@@ -25,10 +24,9 @@ function PortadaSection() {
 
         <p className="lead" style={{ fontFamily: 'Raleway , sans-serif',
                                       fontSize: '2.7rem',
-                                      color: 'rgba(167, 160, 163, 0.9)',
+                                      color: 'rgba(145, 114, 153, 0.9)',
                                       letterSpacing: '0.1em',
-                                      WebkitTextStroke: '1px rgb(17, 2, 2)',
-                                      textShadow: '0 0 4px rgba(255, 60, 0, 0.8)' }}
+                                      WebkitTextStroke: '1px rgb(27, 9, 27)'}}
                                       >Centro de estética para cuerpos no hegemónicos</p>
       </div>
 

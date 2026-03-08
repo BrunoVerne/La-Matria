@@ -18,8 +18,8 @@ function App() {
       <Servicios />
       <Contacto/>
       <BotonWhatsapp 
-        numero="5491158887487"  
-        mensaje="Hola! Vi su página y quiero más información"
+        numero="5491133367046"  
+        mensaje="¡Hola! Vi su página y quiero más información"
       />
     
     </>

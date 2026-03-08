@@ -73,7 +73,7 @@ function Contacto() {
               }}
             />
             <a
-              href="https://mail.google.com/mail/?view=cm&to=lamatria@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&to=estetica.lamatria@outlook.com"
               style={{
                 fontFamily: 'Raleway, sans-serif',
                 fontSize: 'clamp(0.95rem, 2vw, 1.15rem)',
@@ -83,7 +83,7 @@ function Contacto() {
                 textShadow: '0 0 9px rgba(255, 217, 0, 0.4)',
               }}
             >
-              lamatria@gmail.com
+              estetica.lamatria@outlook.com
             </a>
           </div>
 
@@ -98,7 +98,7 @@ function Contacto() {
               }}
             />
             <a
-              href="tel:+5491158887487"
+              href="tel:+5491133367046"
               style={{
                 fontFamily: 'Raleway, sans-serif',
                 fontSize: 'clamp(0.95rem, 2vw, 1.15rem)',
@@ -108,7 +108,7 @@ function Contacto() {
                 textShadow: '0 0 9px rgba(255, 217, 0, 0.4)',
               }}
             >
-              +54 9 11 5888-7487
+              +5491133367046
             </a>
           </div>
 

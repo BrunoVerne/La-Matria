@@ -25,7 +25,7 @@ function QuienesSomos() {
             maxWidth: '280px',
             objectFit: 'cover', 
             filter: 'drop-shadow(0 0 2px rgba(255,255,255,0.8))', 
-            paddingTop: '6rem',
+            paddingTop: '12rem',
             paddingBottom: '6rem',
 
 
@@ -46,8 +46,9 @@ function QuienesSomos() {
         paddingTop: '2rem',
         textShadow: '0 0 9px rgba(255, 214, 253, 0.8)',
       }}>
-        Somos una cooperativa que nació con el fin de matar a todos los jubilados y esparcir el comunismo por toda latinoamérica, somos de Ferro Carril Oeste
-        y nos gusta mucho la marihuana.y nos gusta mucho la marihuana.y nos gusta mucho la marihuana.
+        Somos un espacio de estética pensado para cuerpos reales y diversos. Creemos en el bienestar, 
+        el cuidado y la belleza sin estereotipos ni moldes impuestos. Nuestro objetivo es acompañar a cada persona a sentirse cómoda,
+        segura y valorada en su propio cuerpo, celebrando la diversidad y promoviendo una estética inclusiva.
       </p>
 
       <div className="d-flex justify-content-center align-items-center w-100">

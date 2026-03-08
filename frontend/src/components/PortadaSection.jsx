@@ -7,7 +7,7 @@ import lamatria from '../recursos/lamatria.png';
 
 function PortadaSection() {
   return (
-    <div className="hero-full text-center position-relative" style={{ border: '0.3rem solid rgba(32, 17, 39, 0.9)', background: 'rgb(40, 23, 41)' }}>
+    <div className="hero-full text-center position-relative" style={{ border: '0.3rem solid rgba(32, 17, 39, 0.9)', background: 'rgb(255, 233, 250)' }}>
 
       <div className="col-2">
         {/* espacio vacío para equilibrar */}

@@ -11,27 +11,56 @@ const servicios = [
     id: 1,
     subtitulo: 'Facial',
     descripcion: 'Tratamientos faciales personalizados para cada tipo de piel. Limpieza profunda, hidratación, y cuidado especializado que realza tu belleza natural con técnicas profesionales.',
-    imagen: facialImg, 
+    subservicios: [
+      'Drenaje linfático manual',
+      'Microneedling (Dermapen)',
+      'Limpiezas faciales',
+      'Peeling cosmético',
+      'Máscara LED',
+      'Radiofrecuencia',
+    ],
+    imagen: facialImg,
     imageAlt: 'Tratamiento Facial',
   },
   {
     id: 2,
     subtitulo: 'Corporal',
     descripcion: 'Masajes y tratamientos corporales diseñados para relajar, tonificar y revitalizar tu cuerpo. Una experiencia única que combina técnicas tradicionales y modernas.',
+    subservicios: [
+      'Masajes relajantes',
+      'Masajes descontracturantes',
+      'Masajes reductores',
+      'Masajes circulatorios',
+      'Drenaje linfático manual',
+    ],
     imagen: corporalImg,
     imageAlt: 'Tratamiento Corporal',
   },
   {
     id: 3,
     subtitulo: 'Manicura y Pedicura',
-    descripcion: 'Cuidado completo de tus pies con técnicas de relajación y embellecimiento. Incluye exfoliación, hidratación y esmaltado profesional para un resultado impecable.',
+    descripcion: 'Cuidado completo de manos y pies con técnicas de relajación y embellecimiento. Incluye exfoliación, hidratación y esmaltado profesional para un resultado impecable.',
+    subservicios: [
+      'Semipermanente',
+      'Kapping',
+      'Softgel',
+      'Polygel',
+    ],
     imagen: uniasImg,
-    imageAlt: ' Manicura y Pedicura',
+    imageAlt: 'Manicura y Pedicura',
   },
   {
     id: 4,
     subtitulo: 'Cabello',
     descripcion: 'Servicios integrales de peluquería: corte, coloración, keratina y tratamientos de nutrición. Tu cabello merece el mejor cuidado con productos de primera calidad.',
+    subservicios: [
+      'Cortes',
+      'Retoque de raíces',
+      'Nutrición',
+      'Balayage',
+      'Tintura',
+      'Iluminación',
+    ],
     imagen: cabellosImg,
     imageAlt: 'Tratamiento de Cabello',
   },
@@ -93,7 +122,7 @@ function Servicios() {
                   alt={servicio.imageAlt}
                   style={{
                     width: '100%',
-                    maxWidth: '420px',
+                    maxWidth: '500px',
                     aspectRatio: '4 / 3',
                     objectFit: 'cover',
                     borderRadius: '8px',
@@ -146,9 +175,29 @@ function Servicios() {
                     opacity: '0.9',
                     textShadow: '0 0 9px rgba(255, 217, 0, 0.5)',
                   }}
-                >
+                 >
                   {servicio.descripcion}
                 </p>
+
+                <ul style={{
+                    listStyle: 'none',
+                    padding: 0,
+                    margin: '0.5rem 0 0 0',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.4rem',
+                  }}>
+                  {servicio.subservicios.map((item, i) => (
+                    <li key={i} style={{
+                        fontFamily: 'Raleway, sans-serif',
+                        color: 'white',
+                        fontSize: 'clamp(0.85rem, 1.5vw, 1rem)',
+                        opacity: 0.85,
+                      }}>
+                        ✦ {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           );

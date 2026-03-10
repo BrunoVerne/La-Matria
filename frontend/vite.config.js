@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
-  base: '/',
-  plugins: [react()],
+const repoName = "La-Matria"
+
+export default defineConfig(({ command }) => {
+  return {
+    plugins: [react()],
+    base: command === "build"
+      ? (process.env.GITHUB_ACTIONS ? `/${repoName}/` : "/")
+      : "/"
+  }
 })

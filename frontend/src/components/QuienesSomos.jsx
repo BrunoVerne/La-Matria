@@ -1,72 +1,92 @@
 import React from 'react';
-import cuerpos_autenticos from '../recursos/cuerpos_autenticos.png';
 import aceptarse from '../recursos/aceptarse.png';
-
-
-
 
 function QuienesSomos() {
   return (
-  <section id="quienes-somos" className="d-flex flex-wrap align-items-center" style={{ 
-                  background: 'rgb(178, 147, 180)',
-                  minHeight: '50vh',
-                  paddingTop: '10rem',
-                  }}>
+    <section
+      id="quienes-somos"
+      style={{
+        position: 'relative',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        height: 'auto',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        padding: '6rem 2rem 5rem',
+      }}
+    >
+      {/* Fondo con la imagen difuminada */}
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: `url(${aceptarse})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 85%',
+        filter: 'blur(6px) brightness(1.15) saturate(0.9)',
+        zIndex: 0,
+      }} />
 
-    {/* Izquierda — título grande centrado */}
-    <div className="col-12 col-md-6 d-flex flex-column justify-content-start align-items-center gap-3" style={{ minHeight: '50vh' }}>
-      <h2 style={{ fontFamily: 'Raleway, sans-serif', textShadow: '4px 4px 6px rgba(245, 188, 255, 0.7)' , fontSize: 'clamp(2.5rem, 8vw, 6.1rem)', color: 'rgba(112, 89, 117, 0.9)', textAlign: 'center', paddingTop: '2rem' }}>
-        ¿Quiénes<br/>somos?
-      </h2>
+      {/* Overlay claro */}
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'rgba(255, 245, 250, 0.72)',
+        zIndex: 1,
+      }} />
 
-      <div className="d-flex justify-content-center align-items-center w-100" style={{ padding: '0 2rem' }}>
-        <img src={aceptarse} alt="Aceptarse" className="img-fluid rounded-1" style={{
-            width: '60%',
-            maxWidth: '280px',
-            objectFit: 'cover', 
-            filter: 'drop-shadow(0 0 2px rgba(255,255,255,0.8))', 
-            paddingTop: '12rem',
-            paddingBottom: '6rem',
-
-
-            }} />
-      </div>
-    </div>
-
-    {/* Derecha — texto + imagen */}
-    <div className="col-12 col-md-6 d-flex flex-column justify-content-start align-items-center px-5 gap-4">
-
-      <p className="lead" style={{ 
-        color: 'rgba(255, 255, 255, 0.9)',
-        fontFamily: 'Raleway, sans-serif',
-        fontSize: 'clamp(1rem, 2vw, 2rem)',
-        lineHeight: '1.7',
-        opacity: '0.9',
+      {/* Contenido */}
+      <div style={{
+        position: 'relative',
+        zIndex: 2,
+        maxWidth: '680px',
         textAlign: 'center',
-        paddingTop: '2rem',
-        textShadow: '0 0 9px rgba(255, 214, 253, 0.8)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '2.5rem',
       }}>
-        Somos un espacio de estética pensado para cuerpos reales y diversos. Creemos en el bienestar, 
-        el cuidado y la belleza sin estereotipos ni moldes impuestos. Nuestro objetivo es acompañar a cada persona a sentirse cómoda,
-        segura y valorada en su propio cuerpo, celebrando la diversidad y promoviendo una estética inclusiva.
-      </p>
 
-      <div className="d-flex justify-content-center align-items-center w-100">
-        <img src={cuerpos_autenticos} alt="Cuerpos Auténticos" className="img-fluid rounded-1" style={{ 
-          width: '60%',
-          maxWidth: '280px',
-          objectFit: 'cover',
-          filter: 'drop-shadow(0 0 2px rgba(255,255,255,0.8))',
-          paddingTop: '3rem',
-          paddingBottom: '6rem',
+        {/* Título */}
+        <h2 style={{
+          fontFamily: 'Parisienne, cursive',
+          fontSize: 'clamp(3.5rem, 10vw, 7rem)',
+          color: 'rgba(112, 70, 120, 0.9)',
+          margin: 0,
+          lineHeight: 1.1,
+          letterSpacing: '0.01em',
+          textShadow: '0 2px 20px rgba(200, 140, 210, 0.35)',
+        }}>
+          ¿Quiénes somos?
+        </h2>
 
-
+        {/* Separador fino */}
+        <div style={{
+          width: '60px',
+          height: '1.5px',
+          background: 'rgba(160, 100, 170, 0.5)',
+          borderRadius: '2px',
         }} />
+
+        {/* Texto */}
+        <p style={{
+          fontFamily: 'Raleway, sans-serif',
+          fontSize: 'clamp(1rem, 2.2vw, 1.2rem)',
+          lineHeight: '1.85',
+          color: 'rgba(80, 50, 85, 0.88)',
+          margin: 0,
+          fontWeight: 400,
+          letterSpacing: '0.05em',
+        }}>
+          Somos un espacio de estética pensado para cuerpos reales y diversos.
+          Creemos en el bienestar, el cuidado y la belleza sin estereotipos ni moldes impuestos.
+          Nuestro objetivo es acompañar a cada persona a sentirse cómoda, segura y valorada
+          en su propio cuerpo, celebrando la diversidad y promoviendo una estética inclusiva.
+        </p>
+
       </div>
-
-    </div>
-
-  </section>
+    </section>
   );
 }
 

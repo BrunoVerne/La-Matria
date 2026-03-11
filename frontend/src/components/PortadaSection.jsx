@@ -15,9 +15,9 @@ function PortadaSection() {
 
 
       <div className="col-8 d-flex flex-column align-items-center justify-content-center">
-        <h1  className="display-1 fw-bold" style={{ fontFamily: 'Raleway , sans-serif',
-                                                    color: 'rgba(206, 114, 62, 0.9)',
-                                                  fontSize: '7rem'}}
+        <h1  className="display-1 fw-bold" style={{ fontFamily: 'Parisienne , cursive',
+                                                    color: 'rgba(104, 16, 85, 0.9)',
+                                                  fontSize: '8rem'}}
           >La Matria
         </h1>
 

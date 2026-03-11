@@ -18,7 +18,7 @@ function MenuNav() {
     <button className="btn btn-outline-light btn-lg" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.9)'}} onClick={() => scrollTo('quienes-somos')}>Quiénes somos</button>
     <button className="btn btn-outline-light btn-lg" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.9)'}} onClick={() => scrollTo('servicios')}>Servicios</button>
     <button className="btn btn-outline-light btn-lg" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.9)'}} onClick={() => scrollTo('contacto')}>Contacto</button>
-    <button className="btn btn-outline-light btn-lg" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.9)'}} onClick={() => scrollTo('faq')}>Preguntas frecuentes</button>
+    <button className="btn btn-outline-light btn-lg" style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.9)'}} onClick={() => scrollTo('preguntas-frecuentes')}>Preguntas frecuentes</button>
     </nav>
   );
 }

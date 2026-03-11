@@ -32,6 +32,7 @@ const servicios = [
       'Masajes reductores',
       'Masajes circulatorios',
       'Drenaje linfático manual',
+      'Depilación definitiva'
     ],
     imagen: corporalImg,
     imageAlt: 'Tratamiento Corporal',

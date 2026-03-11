@@ -8,6 +8,7 @@ import QuienesSomos from "./components/QuienesSomos";
 import BotonWhatsapp from "./components/BotonWhatsapp";
 import Servicios from "./components/Servicios";
 import Contacto from "./components/Contacto";
+import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MenuNav />
       <QuienesSomos />
       <Servicios />
+      <PreguntasFrecuentes />
       <Contacto/>
       <BotonWhatsapp 
         numero="5491133367046"  

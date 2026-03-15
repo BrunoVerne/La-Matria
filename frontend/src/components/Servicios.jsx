@@ -1,10 +1,10 @@
 import React from 'react';
 
-// Reemplazá estos imports con tus propias fotos
 import facialImg from '../recursos/facial.jpg';
 import corporalImg from '../recursos/corporal.jpg';
 import uniasImg from '../recursos/unias.png';
 import cabellosImg from '../recursos/cabello.jpg';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const servicios = [
   {
@@ -199,6 +199,39 @@ function Servicios() {
                     </li>
                   ))}
                 </ul>
+
+
+                <a
+                  href={`https://wa.me/5491133367046?text=${encodeURIComponent(
+                    `Hola! Me gustaría obtener más información sobre el servicio de ${servicio.subtitulo}`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.6rem',
+                    marginTop: '1.5rem',
+                    alignSelf: 'flex-start',
+                    backgroundColor: 'rgb(88, 52, 90)',
+                    color: 'white',
+                    fontFamily: 'Raleway, sans-serif',
+                    fontWeight: '600',
+                    fontSize: 'clamp(0.85rem, 1.5vw, 1rem)',
+                    textDecoration: 'none',
+                    padding: '0.65rem 1.4rem',
+                    borderRadius: '50px',
+                    boxShadow: '0 4px 14px rgba(54, 6, 133, 0.4)',
+                    transition: 'transform 0.2s ease', // Un pequeño toque extra para feedback visual
+                  }}
+                  onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
+                  onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+                  ><FaWhatsapp style={{ fontSize: '1.2rem' }} />
+                  {'Quiero más información  ' }
+                </a>
+                    
+               
+                
               </div>
             </div>
           );

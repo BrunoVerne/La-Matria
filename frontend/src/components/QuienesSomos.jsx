@@ -24,7 +24,7 @@ function QuienesSomos() {
         backgroundImage: `url(${aceptarse})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center 85%',
-        filter: 'blur(6px) brightness(1.15) saturate(0.9)',
+        filter: 'blur(1px) brightness(1.15) saturate(0.9)',
         zIndex: 0,
       }} />
 

@@ -9,6 +9,7 @@ import BotonWhatsapp from "./components/BotonWhatsapp";
 import Servicios from "./components/Servicios";
 import Contacto from "./components/Contacto";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
+import BotonInstagram from "./components/BotonInstagram";
 
 function App() {
   return (
@@ -19,11 +20,21 @@ function App() {
       <Servicios />
       <PreguntasFrecuentes />
       <Contacto/>
-      <BotonWhatsapp 
-        numero="5491133367046"  
-        mensaje="¡Hola! Vi su página y quiero más información"
-      />
-    
+      <div style={{
+          position: 'fixed',
+          bottom: '2rem',
+          right: '2rem',
+          zIndex: 9999,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.75rem',
+        }}>
+        <BotonInstagram />
+        <BotonWhatsapp 
+          numero="5491133367046"  
+          mensaje="¡Hola! Vi su página y quiero más información"
+        />
+      </div>
     </>
   )
 }

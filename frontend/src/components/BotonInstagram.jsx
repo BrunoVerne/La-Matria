@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
-function BotonWhatsapp({ numero, mensaje = "Hola! Me contacto desde la web" }) {
-  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+function BotonInstagram() {
+  const url = "https://www.instagram.com/coop.estetica.lamatria/";
 
   return (
     <a
@@ -10,7 +10,7 @@ function BotonWhatsapp({ numero, mensaje = "Hola! Me contacto desde la web" }) {
       target="_blank"
       rel="noopener noreferrer"
       style={{
-        backgroundColor: '#25D366',
+        background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)',
         color: 'white',
         borderRadius: '50%',
         width: '60px',
@@ -26,9 +26,9 @@ function BotonWhatsapp({ numero, mensaje = "Hola! Me contacto desde la web" }) {
       onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
       onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
     >
-      <FaWhatsapp />
+      <FaInstagram />
     </a>
   );
 }
 
-export default BotonWhatsapp;
+export default BotonInstagram;
